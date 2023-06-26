@@ -1,0 +1,26 @@
+{
+  "name": "esmodules",
+  "version": "1.0.0",
+  "description": "",
+  "main": "module1.js",
+  "scripts": {
+    "webpack": "node ./node_modules/webpack/bin/webpack.js",
+    "debug": "node --inspect --inspect-brk ./node_modules/webpack/bin/webpack.js",
+    "dev": "webpack --mode development --watch",
+    "prod": "webpack --mode production",
+    "dev:debug": "npm run debug -- --mode=development",
+    "dev:prod": "npm run debug -- --mode=production",
+    "debugthis": "node --inspect --inspect-brk ./src/index.js",
+    "jsdoc": "node ./node_modules/@jsdoc/bin/jsdoc.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jsdoc": "^4.0.2",
+    "webpack": "^5.88.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^5.1.4"
+  }
+}

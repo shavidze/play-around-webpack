@@ -6,10 +6,10 @@
   "scripts": {
     "webpack": "node ./node_modules/webpack/bin/webpack.js",
     "debug": "node --inspect --inspect-brk ./node_modules/webpack/bin/webpack.js",
-    "dev": "webpack --mode development --watch",
-    "prod": "webpack --mode production",
-    "dev:debug": "npm run debug -- --mode=development",
-    "dev:prod": "npm run debug -- --mode=production",
+    "dev": "npm run webpack -- --env.mode=development --watch",
+    "prod": "npm run webpack -- --env.mode=production",
+    "dev:debug": "npm run debug -- --env.mode=development",
+    "dev:prod": "npm run debug -- --env.mode=production",
     "debugthis": "node --inspect --inspect-brk ./src/index.js",
     "jsdoc": "node ./node_modules/@jsdoc/bin/jsdoc.js"
   },

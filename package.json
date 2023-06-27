@@ -7,16 +7,17 @@
     "webpack-dev-server": "webpack-dev-server",
     "webpack": "node ./node_modules/webpack/bin/webpack.js",
     "debug": "node --inspect --inspect-brk ./node_modules/webpack/bin/webpack.js",
-    "dev": "npm run webpack-dev-server -- --env mode=development presets='[typescript,styles]' --hot",
-    "prod": "npm run webpack -- --env mode=production presets=styles-prod,typescript",
+    "dev": "npm run webpack-dev-server -- --env mode=development presets=typescript,styles --hot",
+    "prod": "npm run webpack -- --env mode=production presets=styles-prod",
     "prod:typescript": "npm run prod -- --env presets=typescript",
     "dev:debug": "npm run debug -- --env mode=development",
     "prod:debug": "npm run debug -- --env mode=production",
+    "prod:analyze": "npm run prod --  --env presets=analyze",
     "debugthis": "node --inspect --inspect-brk ./src/index.js",
     "jsdoc": "node ./node_modules/@jsdoc/bin/jsdoc.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "", 
   "license": "ISC",
   "dependencies": {
     "css-loader": "^6.8.1",
@@ -29,6 +30,7 @@
     "typescript": "^5.1.3",
     "url-loader": "^4.1.1",
     "webpack": "^5.88.0",
+    "webpack-bundle-analyzer": "^4.9.0",
     "webpack-dev-server": "^4.15.1",
     "webpack-merge": "^5.9.0"
   },

@@ -10,7 +10,7 @@
     "dev": "npm run webpack-dev-server -- --env mode=development --hot",
     "prod": "npm run webpack -- --env mode=production",
     "dev:debug": "npm run debug -- --env mode=development",
-    "dev:prod": "npm run debug -- --env mode=production",
+    "prod:debug": "npm run debug -- --env mode=production",
     "debugthis": "node --inspect --inspect-brk ./src/index.js",
     "jsdoc": "node ./node_modules/@jsdoc/bin/jsdoc.js"
   },
@@ -19,10 +19,12 @@
   "license": "ISC",
   "dependencies": {
     "css-loader": "^6.8.1",
+    "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.3",
     "jsdoc": "^4.0.2",
     "mini-css-extract-plugin": "^2.7.6",
     "style-loader": "^3.3.3",
+    "ts-loader": "^9.4.3",
     "url-loader": "^4.1.1",
     "webpack": "^5.88.0",
     "webpack-dev-server": "^4.15.1",

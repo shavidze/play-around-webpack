@@ -8,6 +8,5 @@ module.exports = (env) => {
   const mergeConfigs = mergePresets.map((presetName) =>
     require(`./presets/webpack.${presetName}`)(env)
   );
-  console.log({ mergeConfigs });
   return webpackMerge({}, ...mergeConfigs);
 };

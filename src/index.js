@@ -1,7 +1,8 @@
 import nav from "./nav";
-import { top, bottom } from "./foo";
+import { footer } from "./foo";
 import makeButton from "./button";
-import { makeColorStyle } from "./button-styles";
+import { makeColorStyle, red } from "./button-styles";
 const btn = makeButton("My First Button");
-btn.style = makeColorStyle("blue");
+btn.style = makeColorStyle(red);
 document.body.appendChild(btn);
+document.body.appendChild(footer);

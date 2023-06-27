@@ -1,5 +1,5 @@
 import nav from "./nav";
-import { footer } from "./foo";
+import { footer } from "./footer";
 import makeButton from "./button";
 import { makeColorStyle, red } from "./button-styles";
 const btn = makeButton("My First Button");

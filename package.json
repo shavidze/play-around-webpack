@@ -12,7 +12,7 @@
     "prod:typescript": "npm run prod -- --env presets=typescript",
     "dev:debug": "npm run debug -- --env mode=development",
     "prod:debug": "npm run debug -- --env mode=production",
-    "prod:analyze": "npm run prod --  --env presets=analyze",
+    "prod:analyze": "npm run prod --  --env presets=styles-prod,analyze",
     "debugthis": "node --inspect --inspect-brk ./src/index.js",
     "jsdoc": "node ./node_modules/@jsdoc/bin/jsdoc.js"
   },

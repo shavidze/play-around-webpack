@@ -1,4 +1,5 @@
-module.exports = () => ({
+module.exports = ({ mode }) => ({
+  mode: mode,
   output: {
     filename: "bundle.js",
   },

@@ -9,6 +9,14 @@ module.exports = ({ mode, presets } = { mode: "production", presets: [] }) => {
   return merge(
     {
       mode,
+      module: {
+        rules: [
+          {
+            test: /\.jpe?g$/,
+            use: ["url-loader"],
+          },
+        ],
+      },
       plugins: [new HtmlWebpackPlugin(), new webpack.ProgressPlugin()],
     },
     modeConfig(mode)

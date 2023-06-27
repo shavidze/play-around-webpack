@@ -1,6 +1,5 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-module.exports = ({ mode }) => ({
-  mode: mode,
+module.exports = () => ({
   output: {
     filename: "bundle.js",
   },
